@@ -7,6 +7,50 @@
    <title>Index</title>
 </head>
 <body>
-   
+   <div>
+      <header class="header">
+         <h1 id="title">Bem vindo ao Formulário do Rodrigo</h1>
+         <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum, enim eveniet ducimus
+            tempore impedit voluptates culpa corporis eaque ab maxime dolores. Eligendi quaerat nostrum
+            pariatur omnis id repudiandae iure.</p>
+      </header>
+
+      <form action="" id="survey-form">
+         <div class="form-container">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="name">
+         </div>
+
+         <div>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+         </div>
+
+         <div class="form-container">
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="number" id="nember" min="10" max="99" placeholder="age" required>
+         </div>
+
+         <div class="form-container">
+            <select class="form-container"  name="Role" id="dropdown" required></select>
+         </div>
+
+         <div>
+            <input class="input-radio" type="radio" name="user-recomend" value="" >
+            <input class="input-radio" type="radio" name="user-recommend" value="" >
+            <input class="input-radio" type="radio" name="user-recomend" value="" >
+         </div>
+         
+         <div>
+            <input type="checkbox" class="input-checkbox" name="prefer" value="">
+            <input type="checkbox" class="input-checkbox" name="prefer" value="">
+            <input type="checkbox" class="input-checkbox" name="prefer" value="">
+         </div>
+
+         <div><textarea name="comments" id="comments" cols="30" rows="10"></textarea></div>
+
+         <div><button id="submit"></button></div>
+      </form>
+   </div>
 </body>
 </html>
