@@ -1,1 +1,11 @@
 
+html{
+   background-image: url(/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg);
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+}
