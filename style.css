@@ -13,25 +13,25 @@ html{
 
 .wrap{
    display: grid;
-   grid-template-columns: repeat(auto-fit, min-max(auto, auto));
-   grid-template-rows: repeat(auto-fit, min-max(250px, auto));
-   margin: 10px;
-   justify-items: center;
-   align-content: center;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows:    25% 1fr;
+   margin: 20px;
    font-size: 1.1rem;
    font-family: monospace;
    grid-template-areas: 
-   "side-bar-1 header   side-bar-2"
-   "side-bar-1 form     side-bar-2"
-   "side-bar-1 content  side-bar-2"
-   "side-bar-1 content  side-bar-2"
-   "side-bar-1 content  side-bar-2"
-   "side-bar-1 content  side-bar-2"
+   "header  sidebar"
+   "form    sidebar"
    ;
 }
 
-#header{
-grid-area: header;
-background-color: rgba(255, 255, 255, 0.9);
+.header, h1, p{
+   grid-area: header;
+   overflow: hidden;
+   text-align: center;
+   column-width: 1fr;
+   justify-self: center;
+}
 
+form{
+   grid-area: form;
 }
