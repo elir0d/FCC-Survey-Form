@@ -8,30 +8,48 @@ html{
    background-repeat: no-repeat;
    background-position: center;
    background-attachment: fixed;
-   color: whitesmoke;
 }
+
 
 .wrap{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows:    25% 1fr;
-   margin: 20px;
+   grid-template-rows:    auto 1fr;
+   margin: 10px 15px 10px 15px;
    font-size: 1.1rem;
    font-family: monospace;
    grid-template-areas: 
    "header  sidebar"
    "form    sidebar"
+   "footer  sidebar"
    ;
 }
 
-.header, h1, p{
+.header{
    grid-area: header;
-   overflow: hidden;
    text-align: center;
-   column-width: 1fr;
-   justify-self: center;
+   border-top-left-radius: 25px;
+   background-color: rgba(115, 3, 207, 0.911);
+   color: seashell;
+
 }
 
+.form-wrap{
+   grid-area: form;
+   background-color: rgba(41, 0, 73, 0.801);
+}
+
+input{
+   display: block;
+}
 form{
    grid-area: form;
+}
+
+
+footer{
+   grid-area: footer;
+   background-color: rgba(115, 3, 207, 0.911);
+   border-bottom-left-radius: 25px;
+   height: 115px;
 }
