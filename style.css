@@ -1,4 +1,11 @@
 
+
+:root {
+   --purple:background-color: rgba(41, 0, 73, 0.801);
+   --purple-case:background-color: rgba(115, 3, 207, 0.911);
+ }
+
+
 html{
    background-image: url(/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg);
    -webkit-background-size: cover;
@@ -34,18 +41,28 @@ html{
 
 }
 
+#survey-form{
+   display: absolute;
+   position: relative;
+}
+
 .form-wrap{
    grid-area: form;
    background-color: rgba(41, 0, 73, 0.801);
+   color: white;
 }
 
-input{
+
+#name, #email, #number, #dropdown{
    display: block;
+   margin-bottom: 30px;
+   color: white;
+   font-size: 1.5rem;
+   border: 5px white;
+   border-bottom: 1px  solid white;
+   background: transparent;
+   box-shadow: none;
 }
-form{
-   grid-area: form;
-}
-
 
 footer{
    grid-area: footer;
