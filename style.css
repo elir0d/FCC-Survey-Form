@@ -21,7 +21,6 @@ html{
 .wrap{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows:    auto 1fr;
    margin: 10px 15px 10px 15px;
    font-size: 1.1rem;
    font-family: monospace;
