@@ -79,18 +79,26 @@ html{
 }
 
 button{
-   margin-top: 15px;
+   display: block;
    color: white;
    font-size: 16px;
+   margin-top: 11px;
    border: 3px solid rgba(115, 3, 207, 0.911);
    border-radius: 10px;
-   background: transparent;
+   background:rgba(115, 3, 207, 0.911);;
    box-shadow: none;
-   margin: 0;
    font-family: inherit;
    font-size: inherit;
    line-height: 1.5;
    padding-left: 10px;
+   
+}
+
+button:hover{
+   background-color: white;
+   color:rgba(115, 3, 207, 0.911);
+   border-color: white;
+
 }
 
 footer{
