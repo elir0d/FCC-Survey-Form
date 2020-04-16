@@ -95,14 +95,14 @@ button{
    font-size: inherit;
    line-height: 1.5;
    padding-left: 10px;
+   transition: 0.5s;
    
 }
 
 button:hover{
    background-color: white;
-   color:rgba(115, 3, 207, 0.911);
    border-color: white;
-
+   color:rgba(115, 3, 207, 0.911);
 }
 
 footer{
