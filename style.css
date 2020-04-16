@@ -21,15 +21,18 @@ html{
 .wrap{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   margin: 10px 15px 10px 15px;
+   grid-template-rows: 1fr auto 1fr;
+   margin: 0 auto 0 auto;
    font-size: 1.1rem;
    font-family: monospace;
+   width: 100%;
    grid-template-areas: 
-   "header  sidebar"
-   "form    sidebar"
-   "footer  sidebar"
+   "header sidebar"
+   "form   sidebar"
+   "footer sidebar"
    ;
 }
+
 
 .header{
    grid-area: header;
@@ -40,11 +43,6 @@ html{
 
 }
 
-#survey-form{
-   display: absolute;
-   position: relative;
-}
-
 .form-wrap{
    grid-area: form;
    background-color: rgba(41, 0, 73, 0.801);
@@ -52,15 +50,47 @@ html{
 }
 
 
-#name, #email, #number, #dropdown{
-   display: block;
-   margin-bottom: 30px;
+.form-container{
+   display: flex;
+   flex-direction: column;
+   border: none;
+   font-size: 16px;
+   line-height: 1.5;
+   padding: 0.375rem 0.75rem;
+}
+
+ #name, #email, #number, #dropdown, #comments{
    color: white;
-   font-size: 1.5rem;
-   border: 5px white;
-   border-bottom: 1px  solid white;
+   font-size: 16px;
+   border: 3px solid rgba(115, 3, 207, 0.911);
+   border-radius: 10px;
    background: transparent;
    box-shadow: none;
+   margin: 0;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: 1.5;
+   padding-left: 10px;
+
+}
+
+#comments{
+   padding-top: 10px;
+}
+
+button{
+   margin-top: 15px;
+   color: white;
+   font-size: 16px;
+   border: 3px solid rgba(115, 3, 207, 0.911);
+   border-radius: 10px;
+   background: transparent;
+   box-shadow: none;
+   margin: 0;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: 1.5;
+   padding-left: 10px;
 }
 
 footer{
@@ -69,3 +99,15 @@ footer{
    border-bottom-left-radius: 25px;
    height: 115px;
 }
+
+/* @media (min-width: 768px) {
+   .wrap {
+     max-width: 720px;
+   }
+ }
+
+@media (min-width: 576px) {
+   .wrap {
+     max-width: 540px;
+   }
+ } */
