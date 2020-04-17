@@ -37,7 +37,6 @@ html{
 .header{
    grid-area: header;
    text-align: center;
-   border-top-left-radius: 25px;
    background-color: rgba(115, 3, 207, 0.911);
    color: seashell;
 
@@ -62,8 +61,8 @@ html{
  #name, #email, #number, #dropdown, #comments{
    color: seashell;
    font-size: 16px;
-   border: 3px solid rgba(115, 3, 207, 0.911);
-   border-radius: 10px;
+   border: 2px solid rgba(115, 3, 207, 0.911);
+   border-radius: 2px;
    background: transparent;
    box-shadow: none;
    margin: 0;
@@ -108,7 +107,7 @@ button{
    font-weight: bolder;
    margin-top: 11px;
    border: 3px solid rgba(115, 3, 207, 0.911);
-   border-radius: 10px;
+   border-radius: 4px;
    background:rgba(115, 3, 207, 0.911);;
    box-shadow: none;
    font-family: inherit;
@@ -129,7 +128,6 @@ button:hover{
 footer{
    grid-area: footer;
    background-color: rgba(115, 3, 207, 0.911);
-   border-bottom-left-radius: 25px;
 }
 
  
