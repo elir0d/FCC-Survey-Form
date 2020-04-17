@@ -75,15 +75,21 @@ html{
 
 }
 
-input[type=checkbox]{
+input[type=checkbox], input[type=radio]{
   margin-right: 0.625rem;
   min-height: 1.2rem;
   min-width: 1.2rem;
+
 }
 
 #number, #dropdown{
    height: 40.8px;
    max-width: 400px;
+  
+}
+
+option{
+   color:black;
 }
 
 #survey-form label, p{
