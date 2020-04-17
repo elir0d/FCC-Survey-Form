@@ -22,14 +22,14 @@ html{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr auto 1fr;
-   margin: 15px 0px 0px 8px;
-   font-size: 1.1rem;
+   margin:0;
+   font-size: 1.2rem;
    font-family: monospace;
    width: 100%;
    grid-template-areas: 
-   "header sidebar"
-   "form   sidebar"
-   "footer sidebar"
+   "header .."
+   "form   .."
+   "footer .."
    ;
 }
 
@@ -46,7 +46,7 @@ html{
 .form-wrap{
    grid-area: form;
    background-color: rgba(41, 0, 73, 0.801);
-   color: white;
+   color: seashell;
 }
 
 
@@ -54,13 +54,13 @@ html{
    display: flex;
    flex-direction: column;
    border: none;
-   font-size: 16px;
+   font-size: 1.3rem;
    line-height: 1.5;
    padding: 0.375rem 1.17rem;
 }
 
  #name, #email, #number, #dropdown, #comments{
-   color: white;
+   color: seashell;
    font-size: 16px;
    border: 3px solid rgba(115, 3, 207, 0.911);
    border-radius: 10px;
@@ -68,31 +68,44 @@ html{
    box-shadow: none;
    margin: 0;
    font-family: inherit;
-   font-size: inherit;
+   font-size: ;
    line-height: 1.5;
    padding-left: 10px;
 
+
 }
 
-#survey-form label{
-   padding-left: 1.6rem;
+input[type=checkbox]{
+  margin-right: 0.625rem;
+  min-height: 1.2rem;
+  min-width: 1.2rem;
+}
+
+#number, #dropdown{
+   height: 40.8px;
+   max-width: 400px;
+}
+
+#survey-form label, p{
+   padding-left: 10px;
 }
 
 #comments{
    padding-top: 10px;
+   max-height: 200px;
 }
 
 button{
    display: block;
-   color: white;
-   font-size: 16px;
+   color: seashell;
+   font-size: 20px;
+   font-weight: bolder;
    margin-top: 11px;
    border: 3px solid rgba(115, 3, 207, 0.911);
    border-radius: 10px;
    background:rgba(115, 3, 207, 0.911);;
    box-shadow: none;
    font-family: inherit;
-   font-size: inherit;
    line-height: 1.5;
    padding-left: 10px;
    transition: 0.5s;
@@ -100,9 +113,11 @@ button{
 }
 
 button:hover{
-   background-color: white;
-   border-color: white;
+   background-color: seashell;
+   border-color: seashell;
    color:rgba(115, 3, 207, 0.911);
+   font-size: 20px;
+   font-weight: bolder;
 }
 
 footer{
@@ -112,14 +127,4 @@ footer{
    height: 115px;
 }
 
-/* @media (min-width: 768px) {
-   .wrap {
-     max-width: 720px;
-   }
- }
-
-@media (min-width: 576px) {
-   .wrap {
-     max-width: 540px;
-   }
- } */
+ 
