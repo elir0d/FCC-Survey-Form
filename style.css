@@ -109,6 +109,7 @@ button{
    line-height: 1.5;
    padding-left: 10px;
    transition: 0.5s;
+   margin-bottom: 18px;
    
 }
 
@@ -124,7 +125,6 @@ footer{
    grid-area: footer;
    background-color: rgba(115, 3, 207, 0.911);
    border-bottom-left-radius: 25px;
-   height: 115px;
 }
 
  
