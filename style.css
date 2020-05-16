@@ -127,4 +127,14 @@ footer{
    background-color: rgba(115, 3, 207, 0.911);
 }
 
+span{
+   display: block;
+   color: white;
+   margin: 0 auto;
+}
+
+span a{
+   color: white;
+   text-decoration: none;
+}
  
